@@ -1,0 +1,9 @@
+#canvasMorpion{
+    width: 500px;
+    height: 500px;
+    background-color: #000;
+}
+
+p{
+    padding-bottom: 50px;
+}

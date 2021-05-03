@@ -1,0 +1,197 @@
+/* =========== CSS COMMUN =========== */
+.grid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 200px auto minmax(160px, auto);
+    grid-template-areas: 
+      'header header'
+      'leftbar main'
+      'footer footer';
+    column-gap: 50px;
+    row-gap: 75px;
+  }
+  
+  .page-header {
+    grid-area: header;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .page-leftbar {
+    grid-area: leftbar;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .page-main {
+    grid-area: main;
+    background-image: url(../img/lotus-blured.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 19px 7px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 2px 2px 19px 7px rgba(0,0,0,0.63);
+    -moz-box-shadow: 2px 2px 19px 7px rgba(0,0,0,0.63);
+  }
+  
+  .page-footer {
+    grid-area: footer;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .page-footer a {
+    text-decoration: none;
+    color: var(--main-color-grey);
+    font-size: 3rem;
+  }
+
+  .page-footer a:hover {
+    color: var(--main-color-purple);
+}
+
+  .content {
+    height: 100%;
+    padding: 10px;
+  }
+
+:root {
+    box-sizing: border-box;
+    --main-color-green: #A0D4C2;
+    --main-color-lightgreen: #CFE9E1;
+    --main-color-purple: #a94064;
+    --main-color-grey: #515E65;
+}
+
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    background-color: var(--main-color-lightgreen);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    background-image: url(../img/type.png);
+}
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    color: var(--main-color-purple);
+    margin-bottom: 0;
+    margin-top: 35px;
+    font-weight: lighter;
+}
+
+.content > h2 {
+    color: var(--main-color-grey);
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+h3, h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.38rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-text {
+    color: #000;
+    letter-spacing: normal;
+}
+
+.card-text a {
+    color: var(--main-color-grey);
+}
+
+li {
+    list-style: none;
+    line-height: 1.8;
+    margin: 0 50px;
+}
+
+/* =========== ICONS =========== */
+.fab, .fas{
+    padding: 10px;
+}
+
+.fa-html5{
+    color: #e44d26;
+}
+
+.fa-css3-alt{
+    color: #264de4;
+}
+
+.fa-js-square{
+    color: #f0db4f;
+}
+
+.fa-database{
+    color: #00758F;
+}
+
+.fa-php{
+    color: #474a8a;
+}
+
+.fa-angular{
+    color: #dd1b16;
+}
+
+.page-leftbar a {
+    text-decoration: none;
+    color: var(--main-color-grey);
+    font-size: 1.9rem;
+}
+
+.page-leftbar a:hover {
+    color: var(--main-color-purple);
+}
+
+.page-main h3, h4 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.58rem;
+    font-weight: bold;
+}
+
+.page-main p, li {
+    letter-spacing: 0.18rem;
+}
+.page-main p {
+    margin: 0 40px;
+    text-align: justify;
+}
+
+.page-main a:hover{
+    color: var(--main-color-purple);
+}
+
+hr {
+    border: 2px solid #fff;
+}
+ #countdown {
+    color: var(--main-color-purple);
+    padding-top: 80px;
+ }
+
+/* =========== MEDIA QUERRY =========== */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
